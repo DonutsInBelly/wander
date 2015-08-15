@@ -1,0 +1,15 @@
+class CreateUsers < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      username:string
+      first:string
+      last:string
+      password:string
+      id:integer
+      created:event
+      isadmin:boolean
+
+      t.timestamps null: false
+    end
+  end
+end

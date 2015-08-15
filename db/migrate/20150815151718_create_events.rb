@@ -8,8 +8,9 @@ class CreateEvents < ActiveRecord::Migration
       max:integer
       creator:string
       description:text
-      id:integer
-
+      userid:integer
+      eventid:integer
+      
       t.timestamps null: false
     end
   end
